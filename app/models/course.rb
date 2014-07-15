@@ -1,18 +1,17 @@
-class Course
-	cattr_accessor :site
+class Course < ActiveRecord::Base
+  include RemoteAssociable
 
-	self.site = 'http://192.168.1.131/JsonService/ReadEntity.aspx'
+  self.site = 'http://192.168.1.131/JsonService/ReadEntity.aspx'
 
-	def teacher
-		@teacher ||= from_site(:person, 1).first
-	end
+  has_one_remote :teacher, class: Person, name: :person
 
-	def from_site(type, *ids)		
-		json = Net::HTTP.get (URI("#{self.site}?type=#{type.to_s}&id=#{ids.join(',')}"))
-		objs = ActiveSupport::JSON.decode(json)
+  # has_many :course_students
+  #
+  # has_many_remote :students, class: Person, through: :course_student, name: :person
 
-		klass = type.to_s.capitalize.constantize
 
-		objs.map { |o| klass.new.from_json(o.to_json) }
-	end
+  def students
+    # Get course_students...
+                                                ∞
+  end
 end
