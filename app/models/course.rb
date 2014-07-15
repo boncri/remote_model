@@ -3,15 +3,8 @@ class Course < ActiveRecord::Base
 
   self.site = 'http://192.168.1.131/JsonService/ReadEntity.aspx'
 
-  has_one_remote :teacher, class: Person, name: :person
+  has_one_remote :teacher, name: :person
 
-  # has_many :course_students
-  #
-  # has_many_remote :students, class: Person, through: :course_student, name: :person
-
-
-  def students
-    # Get course_students...
-                                                ∞
-  end
+  has_many :subscriptions
+  has_many_remote :students, through: :subscriptions, name: :person
 end
