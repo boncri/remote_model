@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/boncri/remote_models.git
+  remote: git://github.com/INTERSAIL/remote_models.git
   revision: fa1b7b9107d3851772f68dd28a7e4301ff35b717
   specs:
     remote_models (0.4.0)

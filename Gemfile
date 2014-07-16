@@ -38,4 +38,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'remote_models', github: 'boncri/remote_models'
+gem 'remote_models', github: 'INTERSAIL/remote_models'
