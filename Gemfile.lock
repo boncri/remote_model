@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/boncri/remote_models.git
-  revision: d7d3a5f619dfaf080a8ca4fe48e7a7d652e98cbd
+  revision: fa1b7b9107d3851772f68dd28a7e4301ff35b717
   specs:
-    remote_models (0.3.0)
+    remote_models (0.4.0)
 
 GEM
   remote: https://rubygems.org/

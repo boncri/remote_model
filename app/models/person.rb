@@ -1,16 +1,5 @@
 class Person
-	include ActiveModel::Model
-	include ActiveModel::Serializers::JSON
+  include Intersail::RemoteModels::RemoteModel
 
-	attr_accessor :id, :first_name, :last_name, :birth_date, :height, :weight, :is_admin	
-
-  def attributes=(hash)
-    hash.each do |key, value|
-      send("#{key}=", value)
-    end
-  end
-
-  def attributes
-    instance_values
-  end
+	remote_attributes :id, :first_name, :last_name, :birth_date, :height, :weight, :is_admin
 end
