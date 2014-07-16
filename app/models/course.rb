@@ -1,7 +1,7 @@
 class Course < ActiveRecord::Base
-  include RemoteAssociable
+  include Intersail::RemoteModels::RemoteAssociable
 
-  self.site = 'http://192.168.1.131/JsonService/ReadEntity.aspx'
+  self.site = 'http://sail2p/JsonService/ReadEntity.aspx'
 
   has_one_remote :teacher, name: :person
 

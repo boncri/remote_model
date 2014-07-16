@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/boncri/remote_models.git
+  revision: d7d3a5f619dfaf080a8ca4fe48e7a7d652e98cbd
+  specs:
+    remote_models (0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -117,6 +123,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.1.0)
+  remote_models!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
