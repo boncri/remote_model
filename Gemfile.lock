@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/INTERSAIL/remote_models.git
-  revision: fa1b7b9107d3851772f68dd28a7e4301ff35b717
+  revision: daf11e6d3f2142844c1d95b69abebeebb64a2f35
   specs:
     remote_models (0.4.0)
 
